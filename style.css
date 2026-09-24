@@ -1,0 +1,166 @@
+/* Universal styles */
+*{
+   margin:0;
+   padding: 0;
+   font-weight: normal;
+   font-size: medium;
+   font-family:monospace;
+   
+}
+
+/* header style */
+header{
+    padding: 20px;
+    margin: 20px; 
+    box-shadow: 2px 2px 5px rgb(7, 6, 6);
+    border-radius: 50px;
+    background-color: pink;
+    box-sizing: border-box;
+    max-width: none;
+}
+
+header > h1{  /* nanay ni h1 si header */
+    font-size:x-large;
+    font-style:italic;
+}
+
+/* form container style */
+header,
+#formContainer{
+    padding: 20px;
+    margin: 0 ; 
+    width: auto; 
+    max-width: none;
+    min-width: 600px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgb(7, 6, 6);
+    border-radius: 50px;
+    background-color: pink;
+    grid-column: span 2;
+}
+
+
+
+#formContainer > #studentForm >.input-fields{
+   display:flex;
+   flex-direction: column;
+}
+
+#studentList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+    margin: 0px; 
+    width: auto; 
+    max-width: none;
+    grid-column: 1 / -1; 
+   
+}
+.list-item{
+    padding: 20px;
+    margin:0; 
+    width: auto; 
+    max-width: none;
+    min-width:0;
+    grid-column: span 1;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgb(7, 6, 6);
+    border-radius: 50px;
+    background-color: pink;
+}
+
+#formContainer > #studentForm > div > button{
+
+    background-color: rgb(213, 30, 30);
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto; 
+
+
+}
+
+#formContainer > #studentForm >.input-fields > label{
+    background-color:transparent;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.input-fields > input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#studentList>.list-item> h2{
+     padding: 10px;
+     font-size: large;
+     font-style: italic;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+#studentList>.list-item > p{
+    padding: 10px;
+     font-size: large;
+     font-style: italic;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: red;
+}
+
+#studentList>.list-item > button{
+    background-color: rgb(246, 1, 1);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 10px auto; 
+}
+
+header > h1{
+    text-align: center;
+}
+
+header > small{
+    display: block;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+}
+header,#formContainer, #studentList {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+
+@media (width <= 1000px) {
+    #studentList > .list-item {
+        grid-column: span 2;
+    }
+}
+
+@media (width >= 320px) and (width <= 600px) {
+    #studentList > .list-item {
+        grid-column: span 4;
+    }
+}
+
+@media (width <= 320px) {
+    #studentList > .list-item {
+        grid-column: span 1;    
+    }
+}
+
+
