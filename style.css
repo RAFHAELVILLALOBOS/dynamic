@@ -31,12 +31,12 @@ header,
     margin: 0 ; 
     width: auto; 
     max-width: none;
-    min-width: 600px;
+    min-width: 0;
     box-sizing: border-box;
     box-shadow: 2px 2px 5px rgb(7, 6, 6);
     border-radius: 50px;
     background-color: pink;
-    grid-column: span 2;
+    grid-column: span 2
 }
 
 
