@@ -12,9 +12,9 @@
 header{
     padding: 20px;
     margin: 20px; 
-    box-shadow: 2px 2px 5px rgb(7, 6, 6);
+    box-shadow: 2px 2px 5px rgb(200, 12, 12);
     border-radius: 50px;
-    background-color: pink;
+    background-color: rgb(0, 0, 0);
     box-sizing: border-box;
     max-width: none;
 }
@@ -33,9 +33,9 @@ header,
     max-width: none;
     min-width: 0;
     box-sizing: border-box;
-    box-shadow: 2px 2px 5px rgb(7, 6, 6);
+    box-shadow: 2px 2px 5px rgb(252, 0, 0);
     border-radius: 50px;
-    background-color: pink;
+    background-color: rgba(105, 78, 61, 0.605);
     grid-column: span 2
 }
 
@@ -65,14 +65,14 @@ header,
     min-width:0;
     grid-column: span 1;
     box-sizing: border-box;
-    box-shadow: 2px 2px 5px rgb(7, 6, 6);
+    box-shadow: 2px 2px 5px rgb(247, 4, 4);
     border-radius: 50px;
-    background-color: pink;
+    background-color: rgba(51, 24, 24, 0.37);
 }
 
 #formContainer > #studentForm > div > button{
 
-    background-color: rgb(213, 30, 30);
+    background-color: rgb(244, 1, 1);
     padding: 10px;
     border-radius: 10px;
     display: block;
@@ -109,7 +109,7 @@ header,
      display: flex;
      justify-content: center;
      align-items: center;
-     color: red;
+     color: rgb(251, 247, 247);
 }
 
 #studentList>.list-item > button{
